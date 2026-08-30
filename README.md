@@ -2,6 +2,10 @@
 
 A secure, internal workforce compliance and document management system built for company managers and owners to manage employee KYC documents, monitor expiries, track visa workflows, and maintain full audit trails.
 
+![ZyncStaff Dashboard](./public/screenshots/zyncstaff-dashboard.png)
+
+> 📸 [View more screenshots here](./public/screenshots)
+
 ## Features
 
 - **Role-Based Access Control** — Owner and Manager roles with granular permissions

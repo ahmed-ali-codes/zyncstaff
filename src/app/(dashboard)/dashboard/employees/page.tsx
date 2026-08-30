@@ -31,8 +31,8 @@ export default async function EmployeesPage() {
           <h1 className="text-4xl font-bold tracking-tighter text-foreground">Employees</h1>
         </div>
         <div>
-          <Link 
-            href="/dashboard/employees/new" 
+          <Link
+            href="/dashboard/employees/new"
             className="group relative inline-flex justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-spring hover:opacity-90 active:scale-[0.98] items-center gap-2"
           >
             <Plus size={16} strokeWidth={2} />
@@ -43,14 +43,14 @@ export default async function EmployeesPage() {
 
       <div className="double-bezel-outer">
         <div className="double-bezel-inner">
-          
+
           {/* Table Toolbar */}
           <div className="p-4 border-b border-border/50 flex items-center justify-between bg-card">
             <div className="relative w-full max-w-sm">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={16} strokeWidth={1.5} />
-              <input 
-                type="text" 
-                placeholder="Search employees..." 
+              <input
+                type="text"
+                placeholder="Search employees..."
                 className="w-full pl-9 pr-4 py-2 text-sm bg-muted/30 border border-border/50 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
               />
             </div>
@@ -81,9 +81,8 @@ export default async function EmployeesPage() {
                     <td className="px-6 py-4 font-mono text-xs">{employee.employee_code}</td>
                     <td className="px-6 py-4">{employee.department || '-'}</td>
                     <td className="px-6 py-4">
-                      <span className={`inline-flex items-center px-2 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider ${
-                        employee.status === 'active' ? 'bg-emerald-500/10 text-emerald-600' : 'bg-muted text-muted-foreground'
-                      }`}>
+                      <span className={`inline-flex items-center px-2 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider ${employee.status === 'active' ? 'bg-emerald-500/10 text-emerald-600' : 'bg-muted text-muted-foreground'
+                        }`}>
                         {employee.status}
                       </span>
                     </td>
